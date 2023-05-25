@@ -61,7 +61,7 @@ We now have our selected features: 'win', 'loss', 'cumulative wins', and 'cumula
 
 <img src="Data_visuals/train_dist.png" width="30%"> <img src="Data_visuals/test_dist.png" width="30%">
 
-After ensuring the distribution of our splits are fairly normal, we are ready to perform multivariate regression. 
+After ensuring the distribution of our splits are fairly similar, we are ready to perform multivariate regression. 
 
 <img src="Data_visuals/multivarplot.png" width="30%"> <img src="Data_visuals/multivarresiduals.png" width="30%">
 
