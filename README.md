@@ -45,7 +45,7 @@ To initiate the sentiment analysis process, our first step involves collecting a
 
 Now we are ready to feed our text data into ChatGPT for sentiment analysis! We have already discussed our prompt for ChatGPT above and had success on all except three interviews. We must convert over 2000 entries consisting of only -1,0, and 1 into meaningful statistics. For all responses of an individual interview, we defined 'Response rating' to be equal to $\displaystyle\frac{sum(\text{response tone})}{len(\text{responses})}$ and similarly for 'Question rating'. We observe existence of a linear relationship between these two variables and a mostly normal distribution for our dependent variable ('Response rating'). 
 
-<img src="Data_visuals/Tone_analysis.png" width="30%"> <img src="Data_visuals/RR_distribution.png" width="30%"> 
+<img src="Data_visuals/Tone_analysis.png" width="32%"> <img src="Data_visuals/RR_distribution.png" width="30%"> 
 
 ## :closed_book: Conclusion
 We initiated the sentiment analysis process on Lebron James' NBA Finals interviews by leveraging the capabilities of ChatGPT. We then created variables 'response rating' and 'question rating' which summed the response/question tones (values of -1, 0, 1 assigned by ChatGPT) for each interview and divided by the total number of responses/questions. Since each of these features exhibits linearity, we conducted linear regression analysis, which yielded an $R^2$ value of .271. However, this value falls below the desired range, indicating a suboptimal fit.
