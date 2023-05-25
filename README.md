@@ -4,7 +4,7 @@ Sentiment analysis is a branch of natural language processing that involves dete
 
 The NBA Finals is a prestigous event which crowns the best professional basketball team in the world on a yearly basis. With this prestige comes pressure filled moments, emotional turmoil, and lots of interviews to capture it all! Let's take one of the biggest stars in basketball, Lebron James, and perform sentiment analysis on his interviews during each of his trips to the NBA Finals. 
 
-Lebron James has made 10 seperate Finals appearances. This is a man who competed in 8 consecutive NBA Finals; we are talking about greatness here! Not only is he one of the greatest players of all time, he is viewed as one of the greatest role models as well. An activist, entrepreneur, father, and most of all human being, Lebron James has been in the spotlight since his mid-teenage years and has been a shining example for all that observe him.
+Lebron James has made 10 seperate Finals appearances. This is a man who competed in 8 consecutive NBA Finals; we are talking about greatness here! Not only is he one of the greatest players of all time, he is viewed as one of the greatest role models as well. An activist, entrepreneur, father, and above all, a human being, LeBron James has been in the spotlight since his mid-teenage years, serving as a shining example for all who observe him.
 
 ## 🎯 Aim
 
