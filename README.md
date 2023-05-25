@@ -38,8 +38,7 @@ http://www.asapsports.com/show_player.php?id=13888
 
 **DataFrame Creation** - We collect and coallate the responses from ChatGPT into data frames in Python and then convert the results into meaningful statistics. These statistics are 'Response rating' and 'Question rating' and are defined by summing the results from chatGPT then dividing by the total number of responses or questions. We have now quantified the overall tone of each interview. Next, we must identify potential factors in determining Lebron's tone in these interviews. Data was collected and formatted for the following columns: interview length, practice, game, win, loss, home, away, series result, cumulative wins, and cumulative losses. (note: Game statistics were not collected since practice day interviews were included- where no such data would exist.)
 
-**Regression Analysis** - 
-
+**Regression Analysis** - We begin by performing linear regression on 'Response rating' and 'Question rating', where we interpret the correlation coefficient ($R^2$) and our weights. In our pursuit of stronger results, we conducted feature selection on the complete set of available features to identify the most impactful ones. Through an iterative process, we ensured that only the essential features remained. As an additional validation step, we employed the f_regression technique to check the selected features' relevance and contribution. After performing feature selection, we split our data into separate training and testing sets. For accurate comparisons, we normalized the data to mitigate any scaling discrepancies. We thoroughly examined the distributions of both the train and test groups, ensuring their suitability for analysis. Finally, we interpreted the results obtained from the analysis, identifying potential areas for improvement and further refinement in our approach.
 
 ## :children_crossing: Walkthrough 
 
