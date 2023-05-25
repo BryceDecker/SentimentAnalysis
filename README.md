@@ -57,9 +57,11 @@ For our analysis we have no need to limit our independent variables to only one.
 
 <img src='Data_visuals/Chosen_Variable_analysis.png'>
 
-We now have our selected features: 'win', 'loss', 'cumulative wins', and 'cumulative losses'. Utilizing our train_test_split package we seperate our data into two groups and then we proceed to standardize the data (using StandardScaler). After ensuring the distribution of our splits are fairly normal, we are ready to perform multivariate regression. 
+We now have our selected features: 'win', 'loss', 'cumulative wins', and 'cumulative losses'. Utilizing our train_test_split package we seperate our data into two groups and then we proceed to standardize the data (using StandardScaler). 
 
 <img src="Data_visuals/train_dist.png" width="30%"> <img src="Data_visuals/test_dist.png" width="30%">
+
+After ensuring the distribution of our splits are fairly normal, we are ready to perform multivariate regression. 
 
 <img src="Data_visuals/multivarplot.png" width="30%"> <img src="Data_visuals/multivarresiduals.png" width="30%">
 
