@@ -53,9 +53,9 @@ Proceeding to our first form of regression analysis, Linear regression. For a co
 
 For our analysis we have no need to limit our independent variables to only one. We begin to expand our data set to include more information; data was collected and formatted for the following columns: interview length, practice, game, win, loss, home, away, series result, cumulative wins, and cumulative losses. We decided to eliminate the 'Question rating' variable as it was complex, and would not be immediately available when utilizing for predictions in the future. Now we may begin the feature selection process. Iterating through selected features until finding our strongest combination. 
 
-<img src="RA_8.jpg" width="30%"> <img src="Data_visuals/RA_6.jpg" width="30%"> <img src="Data_visuals/RA_4.jpg" width="30%">
+<img src="Data_visuals/RA_8.jpg" width="30%"> <img src="Data_visuals/RA_6.jpg" width="30%"> <img src="Data_visuals/RA_4.jpg" width="30%">
 
-<img src='Chosen_Variable_analysis.png' width="30%">
+<img src='Data_visuals/Chosen_Variable_analysis.png' width="30%">
 
 
 
