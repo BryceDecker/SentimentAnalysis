@@ -32,11 +32,14 @@ http://www.asapsports.com/show_player.php?id=13888
 ## :triangular_ruler: Skills and Methods
 **Web Scraping** - We conducted web scraping using the bs4 library, utilizing encoding detectors to identify all the links on the page. The BeautifulSoup package was employed to extract the text from the selected links. Leveraging my understanding of website tags, I targeted specific text elements, scraping 'i', 'h3', and 'td' tags to account for the varied formatting, given that some of these interviews date back over 15 years. Additionally, I extracted the headers from each page to identify the date and interview type (game or practice).  
 
-**Text Cleaning** - Once we aggregate the text from each interview we are ready to begin processing our data.  
+**Text Cleaning** - Once we aggregate the text from each interview we are ready to begin processing our data. We split the interviews into question and response groups by identifying each line of a question begins with 'Q.'. Then cleaned each group of text and checked that every interview had the same number of questions as responses. Now the groups were ready to be fed into ChatGPT. 
 
-**DataFrame Creation** -
+**Task Prompting** - Engaging with ChatGPT at a surface level is a pleasurable and user-friendly experience. However, fully harnessing the vast potential of AI requires thoughtful consideration when formulating prompts. Through meticulous development and refinement, we employed first-order logic, identified optimal word choices, instruction length, and formatting techniques to elicit nearly seamless responses from our AI bot. 
+
+**DataFrame Creation** - We collect and coallate the responses from ChatGPT into data frames in Python and then convert the results into meaningful statistics. These statistics are 'Response rating' and 'Question rating' and are defined by summing the results from chatGPT then dividing by the total number of responses or questions. We have now quantified the overall tone of each interview. Next, we must identify potential factors in determining Lebron's tone in these interviews. Data was collected and formatted for the following columns: interview length, practice, game, win, loss, home, away, series result, cumulative wins, and cumulative losses. (note: Game statistics were not collected since practice day interviews were included- where no such data would exist.)
 
 **Regression Analysis** - 
+
 
 ## :children_crossing: Walkthrough 
 
@@ -47,4 +50,9 @@ Subsequently, we proceed to identify and incorporate additional features with th
 
 Utilizing multivariate regressional analysis on test data we obtained an average residual of 0.06. When converting this data into binary classification we obtained an accuracy score of 80.95%. Lastly, we performed the same analysis on the data excluding practice interviews and reached an accuracy score of 90.90% (correctly predicting 10 of the 11 data points). Further validating our intuition that the data would be "too predictable" without the practice interviews.
 
+Overall, we are satisfied with the results and knowledge gained by performing this sentiment analysis. Our regression analysis identified valuable features in identifying the tone of Lebron's response and quantified the strength of their relationship. Most importantly, the multivariate regression performed considerably well when predicting the tone based on minimal information. 
+
 ## :construction: Improvements
+A clear improvement for most studies is obtaining more data and this is the case for ours as well. Additionally, ChatGPT 4.0 has been released and would most likely offer improved analysis and reduced errors in responses. 
+
+It would be interesting to analyze and compare the results by year, or even by wins and losses. We could zoom in specifically on the 2011 Finals, a performance that many point to as James' largest blemish of his career.
