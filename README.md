@@ -63,7 +63,7 @@ We now have our selected features: 'win', 'loss', 'cumulative wins', and 'cumula
 
 <img src="Data_visuals/multivarplot.png" width="30%"> <img src="Data_visuals/multivarresiduals.png" width="30%">
 
-<img src="Data_visuals/mvtest_PDF.png" width="30%"> <img src="Data_visuals/testresiduals.png" width="30%"> <img src="Data_visuals/RA_resid.jpg" width="30%">
+<img src="Data_visuals/mvtest_PDF.png" width="30%"> <img src="Data_visuals/testresiduals.png" width="30%"> <img src="Data_visuals/RA_residsum.jpg" width="30%">
 
 
 
