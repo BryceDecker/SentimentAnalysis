@@ -30,7 +30,7 @@ Originally an f-string was used to auto generate the number of questions (as we 
 http://www.asapsports.com/show_player.php?id=13888
 
 ## :triangular_ruler: Skills and Methods
-**(Web Scraping)**  We conducted web scraping using the bs4 library, utilizing encoding detectors to identify all the links on the page. The BeautifulSoup package was employed to extract the text from the selected links. Leveraging my understanding of website tags, I targeted specific text elements, scraping 'i', 'h3', and 'td' tags to account for the varied formatting, given that some of these interviews date back over 15 years. Additionally, I extracted the headers from each page to identify the date and interview type (game or practice).  
+**Web Scraping** - We conducted web scraping using the bs4 library, utilizing encoding detectors to identify all the links on the page. The BeautifulSoup package was employed to extract the text from the selected links. Leveraging my understanding of website tags, I targeted specific text elements, scraping 'i', 'h3', and 'td' tags to account for the varied formatting, given that some of these interviews date back over 15 years. Additionally, I extracted the headers from each page to identify the date and interview type (game or practice).  
 
 **Text Cleaning** - Once we aggregate the text from each interview we are ready to begin processing our data. We split the interviews into question and response groups by identifying each line of a question begins with 'Q.'. Then cleaned each group of text and checked that every interview had the same number of questions as responses. Now the groups were ready to be fed into ChatGPT. 
 
