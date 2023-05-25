@@ -44,6 +44,7 @@ http://www.asapsports.com/show_player.php?id=13888
 To initiate the sentiment analysis process, our first step involves collecting and organizing the data. This entails web scraping the desired interviews and subsequently cleaning and separating the transcripts into questions and responses. Save this data as a Json file, so the program does not have to webscrape every time. As we proceed we must ensure proper grouping for responses, so that our number of questions and responses agree. This check is located in our get_qandr function (under clean and sort transcript-line 15). 
 
 Now we are ready to feed our text data into ChatGPT for sentiment analysis! We have already discussed our prompt for ChatGPT above and had success on all except three interviews. We must convert over 2000 entries consisting of only -1,0, and 1 into meaningful statistics. For all responses of an individual interview, we defined 'Response rating' to be equal to $\displaystyle\frac{sum(\text{response tone})}{len(\text{responses})}$ and similarly for 'Question rating'. We observe existence of a linear relationship between these two variables and a mostly normal distribution for our dependent variable ('Response rating'). 
+
 <img src="Data_visuals/Tone_analysis.png" width="30%"> <img src="Data_visuals/RR_distribution.png" width="30%"> 
 
 ## :closed_book: Conclusion
