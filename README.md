@@ -38,7 +38,7 @@ http://www.asapsports.com/show_player.php?id=13888
 
 **DataFrame Creation** - We collect and coallate the responses from ChatGPT into data frames in Python and then convert the results into meaningful statistics. These statistics are 'Response rating' and 'Question rating' and are defined by summing the results from chatGPT then dividing by the total number of responses or questions. We have now quantified the overall tone of each interview. Next, we must identify potential factors in determining Lebron's tone in these interviews. Data was collected and formatted for the following columns: interview length, practice, game, win, loss, home, away, series result, cumulative wins, and cumulative losses. (note: Game statistics were not collected since practice day interviews were included- where no such data would exist.)
 
-**Regression Analysis** - SKLearn is our choice of library for linear and multivariate regression analysis. We begin by performing linear regression on 'Response rating' and 'Question rating', where we interpret the correlation coefficient ($R^2$) and our weights. In our pursuit of stronger results, we conducted feature selection on the complete set of available features to identify the most impactful ones. Through an iterative process, we ensured that only the essential features remained. As an additional validation step, we employed the f_regression technique to check the selected features' relevance and contribution. After performing feature selection, we split our data into separate training and testing sets. For accurate comparisons, we normalized the data to mitigate any scaling discrepancies. We thoroughly examined the distributions of both the train and test groups, ensuring their suitability for analysis. Finally, we interpreted the results obtained from the analysis, identifying potential areas for improvement and further refinement in our approach.
+**Regression Analysis** - SKLearn is our choice of library for linear and multivariate regression analysis. We begin by performing linear regression on 'Response rating' and 'Question rating', where we interpret the correlation coefficient ($R^2$) and our weights. In our pursuit of stronger results, we conducted feature selection on the complete set of available features to identify the most impactful ones. Through an iterative process, we ensured that only the essential features remained. As an additional validation step, we employed the f_regression technique to check the selected features' relevance and contribution. After performing feature selection, we split our data into separate training and testing sets. For accurate comparisons, we standardized the data to mitigate any scaling discrepancies. We thoroughly examined the distributions of both the train and test groups, ensuring their suitability for analysis. Finally, we interpreted the results obtained from the analysis, identifying potential areas for improvement and further refinement in our approach.
 
 ## :children_crossing: Walkthrough 
 To initiate the sentiment analysis process, our first step involves collecting and organizing the data. This entails web scraping the desired interviews and subsequently cleaning and separating the transcripts into questions and responses. Save this data as a Json file, so the program does not have to webscrape every time. As we proceed we must ensure proper grouping for responses, so that our number of questions and responses agree. This check is located in our get_qandr function (under clean and sort transcript-line 15). 
@@ -51,11 +51,19 @@ Proceeding to our first form of regression analysis, Linear regression. For a co
 
 <img src="Data_visuals/linreg.jpg" width="32%"> <img src="Data_visuals/lin_reg.png" width="30%">
 
-For our analysis we have no need to limit our independent variables to only one. We begin to expand our data set to include more information; data was collected and formatted for the following columns: interview length, practice, game, win, loss, home, away, series result, cumulative wins, and cumulative losses. We decided to eliminate the 'Question rating' variable as it was complex, and would not be immediately available when utilizing for predictions in the future. Now we may begin the feature selection process. Iterating through selected features until finding our strongest combination. 
+For our analysis we have no need to limit our independent variables to only one. We begin to expand our data set to include more information; data was collected and formatted for the following columns: interview length, practice, game, win, loss, home, away, series result, cumulative wins, and cumulative losses. We decided to eliminate the 'Question rating' variable as it was complex, and would not be immediately available when utilizing for predictions in the future. Now we may begin the feature selection process; iterating through selected features until finding our strongest combination. 
 
 <img src="Data_visuals/RA_8.jpg" width="30%"> <img src="Data_visuals/RA_6.jpg" width="30%"> <img src="Data_visuals/RA_4.jpg" width="30%">
 
 <img src='Data_visuals/Chosen_Variable_analysis.png'>
+
+We now have our selected features: 'win', 'loss', 'cumulative wins', and 'cumulative losses'. Utilizing our train_test_split package we seperate our data into two groups and then we proceed to standardize the data (using StandardScaler). After ensuring the distribution of our splits are fairly normal, we are ready to perform multivariate regression. 
+
+<img src="Data_visuals/train_dist.png" width="30%"> <img src="Data_visuals/test_dist.png" width="30%">
+
+<img src="Data_visuals/multivarplot.png" width="30%"> <img src="Data_visuals/multivarresiduals.png" width="30%">
+
+<img src="Data_visuals/mvtest_PDF.png" width="30%"> <img src="Data_visuals/testresiduals.png" width="30%"> <img src="Data_visuals/RA_resid.jpg" width="30%">
 
 
 
