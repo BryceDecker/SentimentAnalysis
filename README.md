@@ -80,7 +80,7 @@ Subsequently, we proceed to identify and incorporate additional features with th
 
 Utilizing multivariate regressional analysis on test data we obtained an average residual of 0.06. When converting this data into binary classification we obtained an accuracy score of 80.95%. Lastly, we performed the same analysis on the data excluding practice interviews and reached an accuracy score of 90.90% (correctly predicting 10 of the 11 data points). Further validating our intuition that the data would be "too predictable" without the practice interviews.
 
-Overall, we are satisfied with the results and knowledge gained by performing this sentiment analysis. Our regression analysis identified valuable features in identifying the tone of Lebron's response and quantified the strength of their relationship. Most importantly, the multivariate regression performed considerably well when predicting the tone based on minimal information. 
+Overall, we are satisfied with the results and knowledge gained by performing this sentiment analysis. Our regression analysis identified valuable features in identifying the tone of Lebron's response and quantified the strength of their relationship. Most importantly, the multivariate regression performed considerably well when predicting the tone based on minimal and accessible information. 
 
 ## :construction: Improvements
 A clear improvement for most studies is obtaining more data and this is the case for ours as well. Additionally, ChatGPT 4.0 has been released and would most likely offer improved analysis and reduced errors in responses. 
