@@ -67,7 +67,11 @@ After ensuring the distribution of our splits are fairly normal, we are ready to
 
 <img src="Data_visuals/mvtest_PDF.png" width="30%"> <img src="Data_visuals/testresiduals.png" width="30%"> <img src="Data_visuals/RA_residsum.jpg" width="30%">
 
+We found the average residual of 0.06 and mean difference of 26.1% to be relatively good results. However, to make these results a bit more clear we converted our problem into one of binary classification. All of our response ratings fell in the interval $[0,1]$. Naturally, any response rating greater than 0.5 was deemed 'more positive' and the lower ratings - 'more neutral'. We found an accuracy score of 80.95% based on this reclassificationa; score that we are extremely satisfied with. For context, if the model were to have only predicted 'more positive' then it's base accuracy score would be 66.67%. 
 
+<img src="Data_visuals/multivarconfusion.png" width="30%">
+
+To conclude our analysis we replicated the entire process after eliminating the practice interviews from the data set. Through this we were able to achieve an accuracy score of 90.90%. This number has the potential to increase even further with the inclusion of game stats in our analysis. 
 
 ## :closed_book: Conclusion
 We initiated the sentiment analysis process on Lebron James' NBA Finals interviews by leveraging the capabilities of ChatGPT. We then created variables 'response rating' and 'question rating' which summed the response/question tones (values of -1, 0, 1 assigned by ChatGPT) for each interview and divided by the total number of responses/questions. Since each of these features exhibits linearity, we conducted linear regression analysis, which yielded an $R^2$ value of .271. However, this value falls below the desired range, indicating a suboptimal fit.
