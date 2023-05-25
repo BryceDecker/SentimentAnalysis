@@ -1,8 +1,13 @@
 # SentimentAnalysis
 ## 🛈 Background Information
+Sentiment analysis is a branch of natural language processing that involves determining the sentiment - or emotional tone - expressed in a piece of text. It aims to classify the sentiment as positive, negative, or neutral. Originating in the early 2000s, sentiment analysis has evolved with advancements in machine learning and linguistic techniques, enabling applications in various domains such as social media monitoring, customer feedback analysis, and brand reputation management.
 
+The NBA Finals is a prestigous event which crowns the best professional basketball team in the world on a yearly basis. With this prestige comes pressure filled moments, emotional turmoil, and lots of interviews to capture it all! Let's take one of the biggest stars in basketball, Lebron James, and perform sentiment analysis on his interviews during each of his trips to the NBA Finals. 
+
+Lebron James has made 10 seperate Finals appearances. This is a man who competed in 8 consecutive NBA Finals; we are talking about greatness here! Not only is he one of the greatest players of all time, he is viewed as one of the greatest role models as well. An activist, entrepreneur, father, and most of all human being, Lebron James has been in the spotlight since his mid-teenage years and has been a shining example for all that observe him.
 
 ## 🎯 Aim
+
 
 ## :robot: ChatGPT
 Prompt testing was initially performed on openai's website. We found most consistent results when submitting batches of 5 questions/responses. After a consistent return from our prompt, we integrated ChatGPT into Python and identified the tone of over 2,000 questions and responses. Prompt: "Let 1 = positive, 0 = neutral, and -1 = negative. Identify the tone of the 5 questions using the given values. Output the list of values in order of the questions."
@@ -13,7 +18,7 @@ Originally an f-string was used to auto generate the number of questions (as we 
 http://www.asapsports.com/show_player.php?id=13888
 
 ## :triangular_ruler: Skills and Methods
-**Web Scraping** - Performed web scraping through the use of the bs4 library. Encoding detectors were used to identify all links on the page and BeautifulSoup package was utilized to pull all text from the selected links. Used understanding of website tags to scrape desired text, in particular we scraped 'i', 'h3' and 'td' tags as the format varied - a variation due to the fact that some of these interviews are over 15 years old.      
+**Web Scraping** - Performed web scraping through the use of the bs4 library. Encoding detectors were used to identify all links on the page and BeautifulSoup package was utilized to pull all text from the selected links. Used understanding of website tags to scrape desired text; we scraped 'i', 'h3' and 'td' tags as the format varied - a variation due to the fact that some of these interviews are over 15 years old. Scraped headers from each page to identify the date and interview type (game or practice).       
 
 **Text Cleaning** - Once we aggregate the text from each interview we are ready to begin processing our data.  
 
@@ -31,4 +36,3 @@ Next, we form more features as we work to improve our correlation coefficient an
 Utilizing multivariate regressional analysis on test data we obtained an average residual of only 0.06. When converting this data into binary classification we obtained an accuracy score of 80.95%. Lastly, we performed the same analysis on the data excluding practice interviews and reached an accuracy score of 90.90%. Further validating our intuition that the data would be "too predictable" without the practice interviews.
 
 ## :construction: Improvements
-.
