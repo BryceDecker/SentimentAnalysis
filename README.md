@@ -15,7 +15,7 @@ Prompt testing was initially performed on openai's website. We found most consis
 
 Prompt: "Let 1 = positive, 0 = neutral, and -1 = negative. Identify the tone of the 5 questions using the given values. Output the list of values in order of the questions."
 
-Originally an f-string was used to auto generate the number of questions (as we send batches of 5, but inevitably are left with a 'remainder' group ranging in size of 1-5). This, however, increased token usage and so a while loop was utilized to send the prompt which matched the number of questions. Overall, ChatGPT performed well only returning an error on 3 of the over 100 interviews submitted. 
+Originally an f-string was used to auto generate the number of questions (as we send batches of 5, but inevitably are left with a 'remainder' group ranging in size of 1-5). However, this led to an increase in token usage. To address this, we implemented a while loop to send the prompt that matched the number of questions. Overall, ChatGPT performed well only returning an error on 3 of the over 100 interviews submitted. 
 
 ## :mag_right: Interview Source
 http://www.asapsports.com/show_player.php?id=13888
