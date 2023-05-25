@@ -47,6 +47,12 @@ Now we are ready to feed our text data into ChatGPT for sentiment analysis! We h
 
 <img src="Data_visuals/Tone_analysis.png" width="32%"> <img src="Data_visuals/RR_distribution.png" width="30%"> 
 
+Proceeding to our first form of regression analysis, Linear regression. For a complex variable like response tone we cannot expect one feature to describe it effectively, thus we must be reasonable in the interpretation of our results. These results are determined to be below the acceptable standard, but we have begun the path to more substantial results. 
+
+<img src="Data_visuals/linreg.jpg" width="32%"> <img src="Data_visuals/lin_reg.png" width="30%">
+
+
+
 ## :closed_book: Conclusion
 We initiated the sentiment analysis process on Lebron James' NBA Finals interviews by leveraging the capabilities of ChatGPT. We then created variables 'response rating' and 'question rating' which summed the response/question tones (values of -1, 0, 1 assigned by ChatGPT) for each interview and divided by the total number of responses/questions. Since each of these features exhibits linearity, we conducted linear regression analysis, which yielded an $R^2$ value of .271. However, this value falls below the desired range, indicating a suboptimal fit.
 
