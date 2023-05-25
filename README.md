@@ -13,7 +13,7 @@ Our initial objective is to convert interview text from a website into clean and
 
 Following the analysis, we must identify the most appropriate feature which influences Lebron's response tone. We will utilize this feature to perform linear regression.
 
-When examining tone, it is essential to acknowledge the presence of numerous influential factors. Through feature analysis we aim to find the most impactful features and use these to perform multivariate regression analysis.
+When examining tone, it is essential to acknowledge the presence of numerous influential factors. Through feature selection we aim to find the most impactful features and use these to perform multivariate regression analysis.
 
 After conducting the regression analysis, we will assess the outcomes and subsequently further our understanding by transforming these results into binary classification.
 
