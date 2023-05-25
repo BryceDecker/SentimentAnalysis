@@ -55,7 +55,7 @@ For our analysis we have no need to limit our independent variables to only one.
 
 <img src="Data_visuals/RA_8.jpg" width="30%"> <img src="Data_visuals/RA_6.jpg" width="30%"> <img src="Data_visuals/RA_4.jpg" width="30%">
 
-<img src='Data_visuals/Chosen_Variable_analysis.png' width="30%">
+<img src='Data_visuals/Chosen_Variable_analysis.png'>
 
 
 
